@@ -1,0 +1,18 @@
+<app-navbar></app-navbar>
+<h5 class="product-heading">SHOPPING BAG</h5>
+<div class="product-grid">
+        <div *ngFor="let product of products" class="product-card">
+        <img [src]="product.img" alt="{{ product.name }}" class="product-image mb-3">
+        <h4 class="product-name">{{ product.name }}</h4>
+        <p>{{product.price|currency:'INR'}}</p>
+        <div class="mt-4">
+            <button type="submit" class="btn btn-success btn-sm" (click)="onClick(product)">Remove From Cart</button>   
+        </div>
+        </div>
+</div>
+<hr>
+<div class="totals">
+    <h5>PRICE DETAILS</h5>
+    <p>Total Number of Products: {{ totalProducts }}</p>
+    <p>Total Price: {{ totalPrice | currency:'INR' }}</p>
+</div>

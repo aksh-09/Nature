@@ -1,0 +1,10 @@
+.background-img{
+  background: url('https://th.bing.com/th/id/OIP.mHDgL_jPS-xiWbZ5-TCjBgHaEK?rs=1&pid=ImgDetMain') center/cover no-repeat; /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+  color: #fff; /* Set text color to white or any other color that contrasts well with your background */
+  padding: 250px; /* Adjust padding as needed */
+  text-align: left;
+}
+.block-css{
+    margin-left: 370px;
+    margin-top: 20px;
+}

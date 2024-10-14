@@ -1,0 +1,8 @@
+.background-img{
+    background: url('https://i.pinimg.com/originals/df/f8/32/dff832f78dc495e237d662618353701e.jpg') center/cover no-repeat; 
+    padding: 150px; 
+}
+.container{
+    opacity: 0.7;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

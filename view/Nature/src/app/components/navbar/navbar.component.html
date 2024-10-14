@@ -1,0 +1,45 @@
+<nav class="nav-css">
+<nav class="navbar navbar-expand-lg navbar-light bg-light nav-img">
+   <img src="https://th.bing.com/th/id/OIP.PrwGUPPa4LWq-SyVJK-MQAHaF7?rs=1&pid=ImgDetMain" class="img-fluid rounded">
+   <div>
+   <h4>Nature's Paradise</h4>
+   <p>Make Your Home a Greener Place !!</p>
+  </div>
+   <button routerLink="/login" class="btn btn-outline-light button1">Login</button>
+   <button routerLink="/register" class="btn btn-outline-light me-3">Register</button>
+   <button class="btn btn-outline-light" (click)="logout()">Logout</button>
+</nav>
+<nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/">HOME</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="/aboutUs">ABOUT US</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link " routerLink="/contactUs">CONTACT US</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="/feedback">FEEDBACK</a>
+        </li>
+        <li class="dropdown nav-item">
+            <button class="dropbtn">PRODUCTS</button>
+            <div class="dropdown-content">
+              <a  *ngFor="let product of products" (click)="selectProduct(product.id)"><span>{{product.name}}</span></a>
+            </div>
+        </li> 
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/cart">CART</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/wishlist">WISHLIST</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</nav>

@@ -1,0 +1,74 @@
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown button */
+  .dropbtn {
+    padding: 7px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+   color: rgba(249, 247, 247, 0.65);
+   background-color: transparent;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #58b75f;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 700;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #212529; color: white;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+
+  /* styles.css or your component-specific styles file */
+
+.nav-img {
+  background: url('https://onlinecoursesinhorticulture.co.uk/wp-content/uploads/2011/04/herbs-min.jpg') center/cover no-repeat; /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+  color: #fff; /* Set text color to white or any other color that contrasts well with your background */
+  padding: 20px; /* Adjust padding as needed */
+}
+.nav-css{
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.nav-img div{
+  margin-left: 20px;
+}
+.nav-img h4 {
+  margin-bottom: 0.5rem; /* Add some bottom margin to the h4 element */
+}
+
+.nav-img p {
+  margin-top: 0.5rem; /* Add some top margin to the p element */
+}
+
+.nav-img .button1 {
+  margin-left: auto;
+  margin-right: 20px; 
+}
+.nav-img img {
+  width: 80px;
+  height: 80px;
+}
+.active{
+  background-color: #58b75f;
+}
